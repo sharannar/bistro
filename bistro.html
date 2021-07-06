@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="main.css">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: lightcoral;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: white;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("//theveglife.com/wp-content/uploads/2019/04/Close-up-of-Creamy-Roasted-Red-Onions-1.jpg");
+}
+.second{
+  background-image: url("//hips.hearstapps.com/ghk.h-cdn.co/assets/17/30/1500927524-danielle-occhiogross-pork-mustard-0817.jpg?crop=1.00xw:0.667xh;0,0.245xh&resize=640:*");
+}
+.dessert{
+  background-image: url("//://live.staticflickr.com/5184/5664097824_8f8f101660_b.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+
+</head>
+
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Southern Bistro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Entrees</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Desserts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Appetizers</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          
+        </span>
+      </div>
+    </div>
+  </nav> 
+<h1>Rushing's Restaurant</h1>
+<h2>A Southern Bistro</h2>
+<div class="first">
+  <p>Welsh Onion Soko <span class="price">$14</span><br />
+  <small>Mustard Sierra Leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </small></p>
+</div>
+
+<div class="second">
+  <p>Pastrami Boudin Tongue <span class="price">$22</span><br />
+  <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Tuxedo Cheesecake <span class="price">$8</span><br />
+  <small>Layers of moist chocolate fudge cake, rich chocolate cheesecake, and vanilla mousse baked on a chocolate crumb, and topped with dark chocolate ganache.</small></p>
+</div>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+<footer>
+  <a href="mailto:Config_EmailAddress_From?subject=Contact Us" title="tester@email.com">Contact Us</a>
+
+</footer>
+</body>
+</html>
+</body>
